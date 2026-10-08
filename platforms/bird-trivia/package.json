@@ -1,0 +1,10 @@
+{
+  "name": "bird-trivia",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "cd backend && npm install && cd ../frontend && npm install --include=dev",
+    "build": "cd frontend && npm run build",
+    "start": "node backend/index.js"
+  }
+}
